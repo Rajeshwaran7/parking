@@ -1,0 +1,47 @@
+.parking-container {
+  margin: 50px;
+}
+
+.parking-slots {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parking-slot {
+  width: 200px;
+  height: 120px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.available {
+  background-color: green;
+  color: white;
+}
+.available:hover {
+  background-color: rgb(84, 1, 100);
+  color: white;
+}
+
+.occupied {
+  background-color: red;
+  color: white;
+}
+
+.slot-tooltip {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
